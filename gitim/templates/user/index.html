@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UserIndex</title>
+</head>
+<body>
+    {% if UserList %}
+        <ul>
+         {% for user in UserList %}
+            <li><a href="/user/?id={{ user.GID }}/">{{ user.name }}</a></li>
+         {% endfor %}
+        </ul>
+    {% else %}
+        <p>No user are available.</p>
+    {% endif %}
+</body>
+</html>
