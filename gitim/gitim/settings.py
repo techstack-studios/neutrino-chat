@@ -40,6 +40,8 @@ INSTALLED_APPS = [
 
     # My app
     'index.apps.IndexConfig',
+    'user.apps.UserConfig',
+    'chat.apps.ChatConfig',
 ]
 
 MIDDLEWARE = [
