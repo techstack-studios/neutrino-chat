@@ -20,7 +20,7 @@ def index(request):
 
 
 def detail(request, gid):
-    user = Users.objects.all()
+    user = Users.objects.get(GID=gid)
     context = {
         'user': user,
         'gid': gid,

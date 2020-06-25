@@ -8,7 +8,7 @@
     {% if UserList %}
         <ul>
          {% for user in UserList %}
-            <li><a href="/user/?id={{ user.GID }}/">{{ user.name }}</a></li>
+            <li><a href="/user/detail/{{ user.GID }}/">{{ user.name }}</a></li>
          {% endfor %}
         </ul>
     {% else %}
